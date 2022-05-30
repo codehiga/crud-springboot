@@ -16,6 +16,7 @@ public class Locador {
   Long id;
 
   String nome;
+
   String cpf;
 
 
