@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <title>OurLocal</title>
+    
+
+    <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+    
+    <div id="wrapper">
+        <section id="home">
+            <div class="content-home">
+                <h1>Trabalho</h1>
+            </div>
+        </section>
+        <section id="locador">
+
+            <h1>Locador</h1>
+
+            <ul>
+                <li>Criar locador <button>ENTRAR</button></li>
+                <li>Alugar imovel <button>ENTRAR</button></li>
+            </ul>
+        
+            <div id="form_criar_locador" class="row g-3">
+                <div class="col-6">
+                  <label for="input_locador_nome" class="form-label">Nome:</label>
+                  <input type="text" class="form-control" id="input_locador_nome">
+                </div>
+
+                <div class="col-6">
+                  <label for="input_locador_cpf" class="form-label">CPF:</label>
+                  <input type="text" class="form-control" id="input_locador_cpf">
+                </div>
+            
+                <div id="btn_form_locador" class="col-12 d-flex gap-2 justify-content-end">
+                  <button onclick="criarLocador()" class="btn btn-primary col-12">Criar locador</button>
+                </div>
+            </div>
+
+
+            <h4 class="mt-4">Lista locadores:</h4>
+            <div id="lista-locadores" class="list-group overflow-auto">
+                
+            </div>
+
+
+
+
+        </section>
+        <section id="locatario">
+            <h1>Locatario</h1>
+        </section>
+        <section id="imovel">
+            <h1>Imovel</h1>
+        </section>
+    </div>
+
+    
+    <script src="./src/script.js"></script>
+</body>
+</html>
